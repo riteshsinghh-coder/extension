@@ -9,14 +9,14 @@
     function myFunction() {
     let txt = prompt("Please enter your name");
     if (txt != null) {
-       console.log(txt.toUpperCase());
+        document.getElementById("cas").innerHTML=txt.toUpperCase();
     }
 
     }
     function myFunction2() {
     let txt = prompt("Please enter your name");
     if (txt != null) {
-       console.log(txt.toLowerCase());
+        document.getElementById("cas").innerHTML=txt.toLowerCase();
     }
 
     }
@@ -26,6 +26,7 @@
     <h1>hello</h1>
     <button onclick="myFunction()">upper!</button>
     <button onclick="myFunction2()">lower!</button>
+    <h1 id="cas"></h1>
 </body>
 
 </html>
