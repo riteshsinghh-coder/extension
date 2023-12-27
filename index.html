@@ -5,27 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Extension</title>
 </head>
-<script>
-    function myFunction() {
-    let txt = prompt("Please enter your name");
-    if (txt != null) {
-       console.log(txt.toUpperCase());
-    }
-
-    }
-    function myFunction2() {
-    let txt = prompt("Please enter your name");
-    if (txt != null) {
-       console.log(txt.toLowerCase());
-    }
-
-    }
-  
-</script>
 <body>
-    <h1>hello</h1>
-    <button onclick="myFunction()">upper!</button>
-    <button onclick="myFunction2()">lower!</button>
-</body>
+    <form>
+        <label for="inputText">Give us your text</label><br>
+        <input type="text" id="inputText" name="inputText">
+    </form>
+    <input type="radio" id="upper" name="caseType" value="upper">
+    <label for="upper">Change to Uppercase</label><br>
+    <input type="radio" id="lower" name="caseType" value="lower">
+    <label for="lower">Change to Lowercase</label><br>
+    <button id="applyButton">Apply Case</button>
 
+
+    <!-- Display output to the user -->
+    <div id="output"></div>
+
+    <!-- Reference the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
 </html>
