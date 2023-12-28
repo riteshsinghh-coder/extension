@@ -6,9 +6,6 @@ A Chrome extension that allows users to convert text between uppercase and lower
 
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
